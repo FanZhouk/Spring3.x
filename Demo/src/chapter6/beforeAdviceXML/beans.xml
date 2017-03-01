@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/context 
+       http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+<!-- 指定横切逻辑所在的类，被下面所引用 -->
+<bean id="greetingAdvice" class="chapter6.beforeAdviceXML.GreetingBeforeAdvice"/>
+
+<!-- 需要被代理的类，Spring会根据这个类生成一个代理类，要么继承这个类，要么和这个类继承同一个接口 -->
+<bean id="target" class="chapter6.beforeAdviceXML.NaiveWaiter"/>
+
+<!-- 指定代理工厂的类，指定了：1. 继承哪个接口；2. 增强类的名字；3. 要被代理的类 -->
+<bean id="waiter" class="org.springframework.aop.framework.ProxyFactoryBean"
+	p:proxyInterfaces="chapter6.beforeAdviceXML.Waiter"
+	p:interceptorNames="greetingAdvice"
+	p:target-ref="target"/>
+
+</beans>
