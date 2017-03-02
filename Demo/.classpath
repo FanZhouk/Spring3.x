@@ -22,5 +22,11 @@
 	<classpathentry kind="lib" path="lib/org.springframework.web-3.0.5.RELEASE.jar" sourcepath="F:/Spring3.x企业应用开发实战光盘/spring/src/org.springframework.web-sources-3.0.5.RELEASE"/>
 	<classpathentry kind="lib" path="lib/com.springsource.org.aopalliance-1.0.0.jar"/>
 	<classpathentry kind="lib" path="lib/org.springframework.aop-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/com.springsource.org.aspectj.tools-1.6.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar" sourcepath="F:/Spring3.x企业应用开发实战光盘/spring/projects/ivy-cache/repository/org.aspectj/com.springsource.org.aspectj.weaver/1.6.8.RELEASE/com.springsource.org.aspectj.weaver-sources-1.6.8.RELEASE.jar">
+		<attributes>
+			<attribute name="source_encoding" value="UTF-8"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
