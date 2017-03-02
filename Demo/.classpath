@@ -28,5 +28,10 @@
 			<attribute name="source_encoding" value="UTF-8"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="lib/org.springframework.jdbc-3.0.5.RELEASE.jar" sourcepath="F:/Spring3.x企业应用开发实战光盘/spring/src/org.springframework.jdbc-sources-3.0.5.RELEASE.jar">
+		<attributes>
+			<attribute name="source_encoding" value="UTF-8"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
